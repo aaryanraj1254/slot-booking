@@ -1,52 +1,52 @@
 📘 Slot Booking – University Sports Facility Scheduler
 
-A smart web application that enables students to pre-book sports slots in the university sports complex.
-This system reduces overcrowding, prevents booking conflicts, and ensures fair access to all sports facilities.
+A smart booking system that lets students pre-book sports slots in the university sports complex.
+It reduces overcrowding, prevents conflicts, and ensures fair access to sports facilities.
 
 🚀 Features
 🎯 Student Features
 
-View real-time available time slots
+View real-time available slots
 
-Book or cancel sports slots
+Book, cancel, or modify slots
 
-Prevent double booking / overlapping slots
+Prevent double-booking / clashes
 
-Mobile and desktop responsive UI
+Fully responsive UI (mobile + desktop)
 
-View booking history
+Booking history & upcoming bookings
 
-Receive booking confirmations
+Instant confirmation messages
 
 🛠 Admin Features
 
-Add/Edit/Delete sports facilities
+Add / edit / delete sports facilities
 
-Manage slot timings
+Manage daily slot timings
 
-Track booking analytics
+View booking statistics
 
-Manage students and special events
+Handle tournaments / special events
 
-View daily/weekly capacity usage
+Track weekly or monthly usage
 
 🤖 AI/ML Features (Planned)
 
-Predict peak usage hours
+Predict peak time slots
 
 Recommend optimal play hours
 
-Provide insights on demand trends
+Analyze booking trends
 
-Predict no-shows
+Predict no-shows & cancellations
 
-👥 Team Members & Role Distribution
+👥 Team Members & Roles
 Member	Role	Branch
 Aaryan (Captain)	Backend Developer	backend
 Pronaoy	Frontend Developer (React/Next.js)	frontend
 Sourav	AI/ML + Backend Support	ai-ml
 
-Everyone works in their own branch → changes are merged to main via Pull Requests.
+Each teammate works in their own branch → all changes go to main through Pull Requests.
 
 🧱 Tech Stack
 Frontend
@@ -57,7 +57,7 @@ TailwindCSS
 
 Axios
 
-Vercel / GitHub Pages for deployment
+Deployed via Vercel or GitHub Pages
 
 Backend
 
@@ -73,28 +73,28 @@ JWT Authentication
 
 Redis (optional for caching)
 
-AI/ML
+AI / Machine Learning
 
 Python
 
-NumPy, Pandas
+Pandas, NumPy
 
 Scikit-Learn
 
 Jupyter Notebook
 
-🌿 Branch Structure
-main      → final stable production code  
-backend   → backend APIs & DB logic  
-frontend  → UI/UX, components & screens  
+🌿 Branch Strategy
+main      → final, stable production code  
+backend   → backend APIs and database logic  
+frontend  → UI/UX, pages, components  
 ai-ml     → ML models, notebooks, predictions  
 
-🔄 Project Workflow
-1. Clone the repository
+🔄 Project Workflow (How We Work as a Team)
+1️⃣ Clone the Repository
 git clone https://github.com/aaryanraj1254/slot-booking.git
 cd slot-booking
 
-2. Switch to your branch
+2️⃣ Switch to Your Assigned Branch
 
 Backend:
 
@@ -110,47 +110,46 @@ ML:
 
 git checkout ai-ml
 
-3. Make changes & commit
+3️⃣ Make Changes & Commit
 git add .
 git commit -m "your message"
 git push origin <branch-name>
 
-4. Create a Pull Request
+4️⃣ Create a Pull Request
 
-Go to:
+Go to Pull Requests
 
-Pull Requests → New Pull Request
+Click New Pull Request
 
-
-Choose:
+Set**
 
 base: main
+
 compare: your-branch
 
+Submit PR → get it reviewed → approve → merge
 
-Submit PR → Get reviewed → Approve → Merge.
+🔐 Branch Protection Rules (Enabled on main)
 
-🔐 Branch Protection Rules (Enabled)
+✔ Pull Request required
 
-PR required before merging
+✔ Minimum 1 approval
 
-1 Approval required
+✔ No direct pushes to main
 
-Direct push to main NOT allowed
-
-This keeps main clean & prevents code conflicts.
+Keeps main clean and stable.
 
 🔔 Pull Request Notifications
 
-When someone opens a PR:
+When a teammate creates a PR:
 
-You get a GitHub notification (🔔 bell icon)
+You get a 🔔 GitHub notification
 
 You get an email
 
-It appears in Pull Requests tab
+It appears under Pull Requests
 
-You can open the PR → review → approve → merge safely.
+You can open → review → approve → merge.
 
 📁 Recommended Folder Structure
 slot-booking/
@@ -174,26 +173,29 @@ slot-booking/
 │   ├── data/
 │   └── README.md
 │
-└── README.md   ← this file
+└── README.md   ← main project documentation
 
 🎯 Project Goal
 
-To digitize the sports facility booking process, eliminate manual conflicts, and provide a seamless experience for students and admins.
-Built as a collaborative 3-member project demonstrating full-stack, ML, and teamwork skills.
+To modernize the sports facility booking experience by eliminating manual conflicts, reducing crowding, and providing a simple, intuitive web interface for students and admins.
+
+Built as a 3-member collaborative full-stack + ML project showcasing teamwork, backend architecture, UI/UX, and predictive analytics.
 
 🚀 Future Enhancements
 
-OTP-based login
+OTP-based login system
 
-In-app notifications
+Real-time notifications
 
-Payment module for rented equipment
+Payment module for equipment rentals
 
-Calendar view with drag-and-drop scheduling
+Drag-and-drop calendar scheduling
 
-AI-based auto-allocation for tournaments
+AI-powered automatic slot allocation for tournaments
 
 👑 Maintainer
 
 Aaryan Raj (Captain)
-Project Lead – Backend Engineer
+Backend Lead & Project Coordinator
+
+

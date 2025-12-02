@@ -1,7 +1,7 @@
 // backend/src/tests/bookings_cancel.test.js
 const request = require('supertest');
 const app = require('../app');
-const bookingService = require('../services/bookingService');
+const bookingService = require('../services/bookingServices');
 
 describe('Bookings API - cancellation', () => {
   beforeEach(() => bookingService.clearAll());

@@ -16,7 +16,19 @@ router.post('/', (req, res) => {
   }
 });
 
-router.get('/', (req, res) => res.json(bookingService.getAll()));
+router.get('/', (req, res) => {
+  const { userId, facilityId } = req.query;
+
+  // If no filters provided → return everything
+  if (!userId && !facilityId) {
+    return res.json(bookingService.getAll());
+  }
+
+  // If query params exist → return filtered list
+  const list = bookingService.getByFilter({ userId, facilityId });
+  return res.json(list);
+});
+
 
 router.delete('/:id', (req, res) => {
   try {

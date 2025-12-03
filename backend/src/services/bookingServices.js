@@ -42,6 +42,15 @@ function createBooking({ userId, facilityId, startTime, endTime }) {
 function getAll() {
   return bookings.slice();
 }
+function getByFilter(filter = {}) {
+  const { userId, facilityId } = filter;
+  return bookings.filter(b => {
+    if (userId && String(b.userId) !== String(userId)) return false;
+    if (facilityId && String(b.facilityId) !== String(facilityId)) return false;
+    return true;
+  }).slice();
+}
+
 
 function getById(id){
   return bookings.find(b=> b.id === Number(id)) || null;
@@ -64,4 +73,4 @@ function clearAll() {
 }
 
 
-module.exports = { createBooking, getAll, getById,cancelBooking,clearAll};
+module.exports = { createBooking, getAll, getByFilter, getById, cancelBooking, clearAll };
